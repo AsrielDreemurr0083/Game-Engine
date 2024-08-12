@@ -358,6 +358,8 @@
 "Assets/Class2nd (Script)/Scripts/Death.cs"
 "Assets/Class2nd (Script)/Scripts/Dinosaur.cs"
 "Assets/Class2nd (Script)/Scripts/Stats.cs"
+"Assets/Class3th (GetComponent)/Scripts/Move.cs"
+"Assets/Class3th (GetComponent)/Scripts/StoneUnit.cs"
 -langversion:9.0
 
 /deterministic
