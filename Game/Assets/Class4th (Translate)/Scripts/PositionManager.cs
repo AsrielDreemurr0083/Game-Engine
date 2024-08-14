@@ -9,7 +9,7 @@ public class PositionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("ResetPosition", 0, 5);
+        InvokeRepeating("ResetPosition", 5, 5);
     }
 
     public void ResetPosition()
