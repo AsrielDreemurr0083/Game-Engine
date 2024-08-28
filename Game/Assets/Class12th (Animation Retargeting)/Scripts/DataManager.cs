@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DataManager : MonoBehaviour
 {
     [SerializeField] int score;
-    [SerializeField] int score1;
+    [SerializeField] ScoreUI scoreUI;
     void Awake()
     {
         Load();
@@ -15,31 +15,39 @@ public class DataManager : MonoBehaviour
 
     public void IncreaseScore()
     {
-        score += 10;
-        score1 += Random.Range(5, 10);
+        
+        int random = Random.Range(5, 11);
+        score += random;
+
+        scoreUI.OnUpdate(random);
         PlayerPrefs.SetInt("Score", score);
-        PlayerPrefs.SetInt("Score1", score1);
+
     }
 
     public void Load()
     {
         score = PlayerPrefs.GetInt("Score");
-        score1 = PlayerPrefs.GetInt("Score1");
 
     }
 
-    public void Save()
+    //public void Save()
+    //{
+    //    PlayerPrefs.Save();
+    //}
+    //
+    //private void Update()
+    //{   
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //    PlayerPrefs.DeleteAll();               
+    //    }
+    //    Load();    
+    //}
+
+    public void Initialized()
     {
-        PlayerPrefs.Save();
-    }
-
-    private void Update()
-    {   
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-        PlayerPrefs.DeleteAll();               
-        }
-        Load();    
+        PlayerPrefs.DeleteAll();
+        Load();
     }
 
 }
