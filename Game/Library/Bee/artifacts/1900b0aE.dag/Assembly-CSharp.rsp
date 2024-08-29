@@ -381,6 +381,10 @@
 "Assets/Class7th (Prefab)/Scripts/Health.cs"
 "Assets/Class7th (Prefab)/Scripts/Mummy.cs"
 "Assets/Class9th (Collision)/Scripts/Knight.cs"
+"Assets/Test/Scripts/CardNumber.cs"
+"Assets/Test/Scripts/RuleManager.cs"
+"Assets/Test/Scripts/Timer.cs"
+"Assets/Test/Scripts/TimerUI.cs"
 -langversion:9.0
 
 /deterministic
